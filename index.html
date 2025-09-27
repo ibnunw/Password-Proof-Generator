@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Proof Generator - PoC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Password Proof Generator</h1>
+        <p>Zero-Knowledge Proof Demonstration with Soundness Layer</p>
+        
+        <div class="input-section">
+            <input type="password" id="passwordInput" placeholder="Enter your password">
+            <button onclick="generateProof()">Generate Proof</button>
+        </div>
+        
+        <div class="output-section">
+            <h3>Generated Proof:</h3>
+            <textarea id="proofOutput" readonly></textarea>
+            <button onclick="copyProof()">Copy Proof</button>
+            <button onclick="verifyProof()">Verify Proof</button>
+        </div>
+        
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
